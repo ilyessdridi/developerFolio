@@ -5,4 +5,12 @@
 *.png binary
 *.webp binary
 *.woff binary
-
+# Prevent line ending conversion for binary files
+*.pdf binary
+*.jpeg binary
+*.jpg binary
+*.png binary
+*.mp4 binary
+*.mov binary
+*.zip binary
+*.doc* binary

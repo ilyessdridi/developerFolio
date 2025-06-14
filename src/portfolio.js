@@ -4,6 +4,10 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+
 
 // Splash Screen
 
@@ -20,10 +24,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "ilyess dridi",
+  title: "Hi all, I'm ilyess",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / Flutter / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -33,13 +37,13 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/ilyessdridi",
+  linkedin: "https://www.linkedin.com/in/ilyess-dridi-16642425b/",
+  gmail: "ilyessdridi37@gmail.com",
+  facebook: "https://www.facebook.com/ilyess.dridi.777", 
+  instagram:"https://www.instagram.com/ilyess.dridi/",
+  twitter:"https://x.com/dridi_ilyess",
+  
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -56,69 +60,116 @@ const skillsSection = {
     ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Integration of third party services such as Firebase / AWS / Digital Ocean"
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
+  // Updated to use Devicon icons
+  // ...existing code...
   softwareSkills: [
+    // 1. Frameworks/Libraries
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "ReactJS",
+      fontAwesomeClassname: "devicon-react-original colored"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Next.js",
+      fontAwesomeClassname: "devicon-nextjs-original colored"
+    },
+
+    {
+      skillName: "Flutter",
+      fontAwesomeClassname: "devicon-flutter-plain colored"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "React Native",
+      fontAwesomeClassname: "devicon-react-original colored"
     },
+    {
+      skillName: "Node.js",
+      fontAwesomeClassname: "devicon-nodejs-plain colored"
+    },
+    // Same as React
+    {
+      skillName: "Express.js",
+      fontAwesomeClassname: "devicon-express-original colored"
+    },
+    {
+      skillName: "Fastify",
+      fontAwesomeClassname: "devicon-nodejs-plain colored"
+    }, // Fallback to Node.js
+    {
+      skillName: "Material UI",
+      fontAwesomeClassname: "devicon-materialui-plain colored"
+    },
+
+    // 2. Databases
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "devicon-mongodb-plain colored"
+    },
+    {skillName: "SQL", fontAwesomeClassname: "devicon-mysql-plain colored"},
+    {
+      skillName: "Firebase",
+      fontAwesomeClassname: "devicon-firebase-plain colored"
+    },
+
+    // 3. CSS/Styling
+    {skillName: "CSS3", fontAwesomeClassname: "devicon-css3-plain colored"},
+    {skillName: "SASS", fontAwesomeClassname: "devicon-sass-original colored"},
+
+    {
+      skillName: "Bootstrap",
+      fontAwesomeClassname: "devicon-bootstrap-plain colored"
+    },
+
+    // 4. Languages
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "devicon-javascript-plain colored"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "TypeScript",
+      fontAwesomeClassname: "devicon-typescript-plain colored"
     },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
+    {skillName: "Swift", fontAwesomeClassname: "devicon-swift-plain colored"},
+    {skillName: "PHP", fontAwesomeClassname: "devicon-php-plain colored"},
+    {skillName: "C++", fontAwesomeClassname: "devicon-cplusplus-plain colored"},
+    {skillName: "C", fontAwesomeClassname: "devicon-c-plain colored"},
+
+    // 5. Other Tools/Platforms
+    {skillName: "HTML5", fontAwesomeClassname: "devicon-html5-plain colored"},
+
     {
       skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      fontAwesomeClassname: "devicon-npm-original-wordmark colored"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "AWS",
+      fontAwesomeClassname: "devicon-amazonwebservices-original colored"
+    },
+    {skillName: "Docker", fontAwesomeClassname: "devicon-docker-plain colored"},
+    {
+      skillName: "GitHub",
+      fontAwesomeClassname: "devicon-github-original colored"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "JWT",
+      fontAwesomeClassname: "devicon-javascript-plain colored"
+    }, // No JWT icon; JS is symbolic
+    {
+      skillName: "Prisma",
+      fontAwesomeClassname: "devicon-prisma-original colored"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Tailwind CSS",
+      fontAwesomeClassname: "devicon-tailwindcss-original"
     }
   ],
+  // ...existing code...
   display: true // Set false to hide this section, defaults to true
 };
+
 
 // Education Section
 
@@ -126,23 +177,16 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
+      schoolName: "Esprit",
+      logo: require("./assets/images/esprit.jpeg"),
       subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "ReBootKamp(RBK)",
+      logo: require("./assets/images/rbk.png"),
+      subHeader: "Full Stack web /mobile developer certificate",
+     
     }
   ]
 };
@@ -158,11 +202,11 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "78%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -212,17 +256,18 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  //subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/weelance.png"),
+      projectName: "WeeLance",
+      projectDesc:
+        "WeeLance—your go-to freelance platform for effortless job matching and collaboration.",
+      demoVideo: require("./assets/vidioes/weelance.mp4"), // <-- Add this line
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View Demo"
         }
         //  you can add extra buttons here.
       ]
@@ -372,8 +417,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+216 29873163",
+  email_address: "ilyessdridi37@gmail.com"
 };
 
 // Twitter Section

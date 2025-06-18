@@ -1,6 +1,7 @@
 {
   "homepage": "https://github.com/ilyessdridi/Portfolio-",
-  "name": "ilyess-dridi-portfolio",
+  "name": "ilyessdridi-portfolio",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -5,7 +5,8 @@
 build/
 /.pnp
 .pnp.js
-
+node_modules/
+.cache/
 # testing
 /coverage
 /build

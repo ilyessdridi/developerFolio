@@ -41,14 +41,15 @@
 }
 
 .education-roundedimg {
-  object-fit: cover;
+  object-fit: contain; // Changed from 'cover' to 'contain' to ensure full image fits
   margin-right: 2rem;
   width: 6rem;
   height: 6rem;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
+  background-color: white; // Add background for transparent logos
+  padding: 0.5rem; // Add some padding
 }
-
 .education-card-right {
   max-width: 70%;
 }
@@ -103,8 +104,8 @@
     font-size: 16px;
   }
   .education-roundedimg {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     margin-bottom: 0.5rem;
     margin-right: 0px;
   }
@@ -122,8 +123,8 @@
   }
   .education-roundedimg {
     margin-top: 10px;
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
     margin-bottom: 1rem;
     margin-right: 0;
   }

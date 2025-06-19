@@ -30,7 +30,7 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / Flutter / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1jXo4IW7HnnqKLtzS-YsWZn5je4yQQ-Z-/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -256,9 +256,10 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projects",
+  title: "Big Projects",
   projects: [
     {
+      isMobileApp: true,
       images: [
         // Changed from 'image' to 'images' array
         require("./assets/images/firstPage_wl.png"),
@@ -273,6 +274,7 @@ const bigProjects = {
         require("./assets/images/notification.png"),
         require("./assets/images/profile2.png"),
         require("./assets/images/projects2.png"),
+        
       ],
       projectName: "WeeLance",
       projectDesc:
@@ -285,17 +287,26 @@ const bigProjects = {
       ]
     },
     {
+      isMobileApp: false,
       images: [
         // Changed from 'image' to 'images' array
-        require("./assets/images/nextuLogo.webp"),
-        require("./assets/images/signup.png") // Add more images as needed
+       
+        require("./assets/images/blogs_oz.PNG"),
+        require("./assets/images/boutique_oz.PNG"),
+        require("./assets/images/cart_oz.PNG"),
+        require("./assets/images/events_oz.PNG"),
+        require("./assets/images/gallorie_oz.PNG"), 
+        require("./assets/images/profile_oz.PNG"), 
+        require("./assets/images/boutique_bk_oz.PNG"), 
+        require("./assets/images/users_bk_oz.PNG"), 
       ],
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Ozeum",
+      projectDesc:"Ozeom is an art platform to explore galleries, buy artworks, and discover blogs and events",
+      className: "nextu-project",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          // name: "Visit Website",
+          // url: "http://nextu.se/"
         }
       ]
     }

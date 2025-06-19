@@ -70,12 +70,18 @@ export default function StartupProject() {
                 }
               >
                 {project.images && project.images.length > 0 && (
-                  <div className="project-image-container">
+                  <div
+                    className={`project-image-container ${
+                      isDark ? "dark-bg" : "light-bg"
+                    }`}
+                  >
                     <div className="project-image">
                       <img
                         src={project.images[currentImageIndex[i] || 0]}
                         alt={project.projectName}
-                        className="card-image"
+                        className={`card-image ${
+                          project.isMobileApp ? "mobile-app" : ""
+                        }`}
                       />
                     </div>
                     {project.images.length > 1 && (
@@ -145,70 +151,64 @@ export default function StartupProject() {
             ))}
           </div>
         </div>
-        {/* Demo Video Modal - keep existing */} 
-        {
-   /* Demo Video Modal */
- }
- {
-   showDemo && demoVideo && (
-     <div
-       className="demo-modal"
-       style={{
-         position: "fixed",
-         top: 0,
-         left: 0,
-         right: 0,
-         bottom: 0,
-         background: "rgba(0,0,0,0.7)",
-         display: "flex",
-         alignItems: "center",
-         justifyContent: "center",
-         zIndex: 9999
-       }}
-     >
-       <div
-         style={{
-           background: "#fff",
-           padding: 20,
-           borderRadius: 8,
-           maxWidth: 500,
-           width: "90%",
-           maxHeight: "80vh",
-           display: "flex",
-           flexDirection: "column",
-           alignItems: "center",
-           overflowY: "auto"
-         }}
-       >
-         <video
-           src={demoVideo}
-           controls
-           style={{
-             width: "100%",
-             maxHeight: "60vh",
-             borderRadius: "8px"
-           }}
-         />
-         <button
-           onClick={() => setShowDemo(false)}
-           style={{
-             marginTop: 16,
-             padding: "8px 24px",
-             borderRadius: 5,
-             border: "none",
-             background: "#007bff",
-             color: "#fff",
-             cursor: "pointer"
-           }}
-         >
-           Close
-         </button>
-       </div>
-     </div>
-   )
- }
-
-        
+        {/* Demo Video Modal - keep existing */}
+        {/* Demo Video Modal */}
+        {showDemo && demoVideo && (
+          <div
+            className="demo-modal"
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: "rgba(0,0,0,0.7)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              zIndex: 9999
+            }}
+          >
+            <div
+              style={{
+                background: "#fff",
+                padding: 20,
+                borderRadius: 8,
+                maxWidth: 500,
+                width: "90%",
+                maxHeight: "80vh",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                overflowY: "auto"
+              }}
+            >
+              <video
+                src={demoVideo}
+                controls
+                style={{
+                  width: "100%",
+                  maxHeight: "60vh",
+                  borderRadius: "8px"
+                }}
+              />
+              <button
+                onClick={() => setShowDemo(false)}
+                style={{
+                  marginTop: 16,
+                  padding: "8px 24px",
+                  borderRadius: 5,
+                  border: "none",
+                  background: "#007bff",
+                  color: "#fff",
+                  cursor: "pointer"
+                }}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </Fade>
   );

@@ -139,7 +139,6 @@
       object-fit: contain; // Show complete image without cropping
       object-position: center;
       transition: transform 0.3s ease;
-      
 
       &:hover {
         transform: scale(1.05);
@@ -331,6 +330,12 @@
 @media (max-width: 768px) {
   .projects-container {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .project-card {
+    margin-bottom: 1.5rem;
   }
 
   .project-image-container {

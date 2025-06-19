@@ -22,9 +22,15 @@ export default function Greeting() {
       justifyContent: "space-between",
       alignItems: "center",
       width: "100%",
+<<<<<<< HEAD
       maxWidth: "1400px",
       margin: "0 auto",
       padding: "1rem",
+=======
+      maxWidth: "1200px",
+      margin: "0 auto",
+      padding: "2rem",
+>>>>>>> 8bb1035a54f56bc3dfaeb835de6ba55f6b1802df
       flexWrap: "wrap" // Allows items to stack on mobile
     },
     textSection: {
@@ -115,7 +121,11 @@ export default function Greeting() {
               >
                 {greeting.subTitle}
               </p>
+<<<<<<< HEAD
               {/* <SocialMedia /> */}
+=======
+              <SocialMedia />
+>>>>>>> 8bb1035a54f56bc3dfaeb835de6ba55f6b1802df
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (

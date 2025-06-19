@@ -8,7 +8,10 @@ import {FaArrowLeft, FaArrowRight} from "react-icons/fa";
 export default function StartupProject() {
   const [showDemo, setShowDemo] = useState(false);
   const [demoVideo, setDemoVideo] = useState(null);
+<<<<<<< HEAD
   const [currentImageIndex, setCurrentImageIndex] = useState({}); // Track current image index for each project
+=======
+>>>>>>> 8bb1035a54f56bc3dfaeb835de6ba55f6b1802df
 
   function openUrlInNewTab(url) {
     if (!url) return;
@@ -18,6 +21,14 @@ export default function StartupProject() {
   function handleViewDemo(video) {
     setDemoVideo(video);
     setShowDemo(true);
+<<<<<<< HEAD
+=======
+  }
+
+  const {isDark} = useContext(StyleContext);
+  if (!bigProjects.display) {
+    return null;
+>>>>>>> 8bb1035a54f56bc3dfaeb835de6ba55f6b1802df
   }
 
   const handlePrevImage = projectIndex => {
@@ -84,6 +95,7 @@ export default function StartupProject() {
                         }`}
                       />
                     </div>
+<<<<<<< HEAD
                     {project.images.length > 1 && (
                       <>
                         <div
@@ -119,6 +131,45 @@ export default function StartupProject() {
                     <div className="project-card-footer">
                       {project.footerLink.map((link, idx) => {
                         if (link.name === "View Demo" && project.demoVideo) {
+=======
+                  ) : null}
+                  <div className="project-detail">
+                    <h5
+                      className={isDark ? "dark-mode card-title" : "card-title"}
+                    >
+                      {project.projectName}
+                    </h5>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    >
+                      {project.projectDesc}
+                    </p>
+                    {project.footerLink ? (
+                      <div className="project-card-footer">
+                        {project.footerLink.map((link, idx) => {
+                          // If this is the View Demo button and demoVideo exists, show the popout
+                          if (link.name === "View Demo" && project.demoVideo) {
+                            return (
+                              <span
+                                key={idx}
+                                className={
+                                  isDark
+                                    ? "dark-mode project-tag"
+                                    : "project-tag"
+                                }
+                                style={{cursor: "pointer"}}
+                                onClick={() =>
+                                  handleViewDemo(project.demoVideo)
+                                }
+                              >
+                                {link.name}
+                              </span>
+                            );
+                          }
+                          // Otherwise, open the link as usual
+>>>>>>> 8bb1035a54f56bc3dfaeb835de6ba55f6b1802df
                           return (
                             <span
                               key={idx}
@@ -151,7 +202,10 @@ export default function StartupProject() {
             ))}
           </div>
         </div>
+<<<<<<< HEAD
         {/* Demo Video Modal - keep existing */}
+=======
+>>>>>>> 8bb1035a54f56bc3dfaeb835de6ba55f6b1802df
         {/* Demo Video Modal */}
         {showDemo && demoVideo && (
           <div

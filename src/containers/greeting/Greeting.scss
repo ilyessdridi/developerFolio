@@ -37,6 +37,9 @@
 .button-greeting-div {
   display: flex;
   margin-top: 40px;
+   // Adds spacing between buttons
+  flex-wrap: wrap; // Allows buttons to stack on small screens
+  
 }
 .download-link-button {
   text-decoration: none;

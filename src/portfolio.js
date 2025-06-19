@@ -257,23 +257,39 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  //subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/weelance.png"),
+      images: [
+        // Changed from 'image' to 'images' array
+        require("./assets/images/firstPage_wl.png"),
+        require("./assets/images/signup.png"),
+        require("./assets/images/home_wl.png"),
+        require("./assets/images/sideBar_wl.png"),
+        require("./assets/images/profile_wl.png"),
+        require("./assets/images/services_wl.png"),
+        require("./assets/images/project_wl.png"),
+        require("./assets/images/events_wl.png"),
+        require("./assets/images/setting1_wl.png"),
+        require("./assets/images/notification.png"),
+        require("./assets/images/profile2.png"),
+        require("./assets/images/projects2.png"),
+      ],
       projectName: "WeeLance",
       projectDesc:
         "WeeLance—your go-to freelance platform for effortless job matching and collaboration.",
-      demoVideo: require("./assets/vidioes/weelance.mp4"), // <-- Add this line
+      demoVideo: require("./assets/vidioes/weelance.mp4"),
       footerLink: [
         {
           name: "View Demo"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      images: [
+        // Changed from 'image' to 'images' array
+        require("./assets/images/nextuLogo.webp"),
+        require("./assets/images/signup.png") // Add more images as needed
+      ],
       projectName: "Nextu",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -284,9 +300,8 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
-
 // Achievement Section
 // Include certificates, talks etc
 
